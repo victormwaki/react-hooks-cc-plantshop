@@ -41,13 +41,6 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
-    },
-    {
-      "name": "Hiyashi Chuka",
-      "image": "https://images.app.goo.gl/gfQGMsKZZUQZTFa86",
-      "price": "20.2",
-      "soldOut": false,
-      "id": 8
     }
   ]
 }
