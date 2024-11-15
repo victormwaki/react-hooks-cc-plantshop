@@ -7,9 +7,11 @@ function PlantPage() {
   const [plants, setPlants] = useState([]);
   const [search, setSearch] = useState("");
 
+  const API_URL = 'https://my-json-server.typicode.com/Nattyprofessor/react-hooks-cc-plantshop';
+
   useEffect(() => {
     // Fetch initial plant data
-    fetch("http://localhost:6001/plants")
+    fetch(`${API_URL}/plants`)
       .then((response) => response.json())
       .then((data) => setPlants(data))
       .catch((error) => console.error("Error fetching plants:", error));
@@ -17,7 +19,7 @@ function PlantPage() {
 
   function onSubmitPlant(newPlant) {
     // Add new plant to server
-    fetch("http://localhost:6001/plants", {
+    fetch(`${API_URL}/plants`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newPlant),
