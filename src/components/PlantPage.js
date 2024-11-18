@@ -19,7 +19,7 @@ function PlantPage() {
 
   function onSubmitPlant(newPlant) {
     // Add new plant to server
-    fetch(`${API_URL}/plants`, {
+    fetch(``, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newPlant),
